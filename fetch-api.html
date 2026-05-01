@@ -5,13 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fetch-API</title>
-  <script type="module" crossorigin src="/js-practice-l11/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <link rel="stylesheet" crossorigin href="/js-practice-l11/assets/styles-3ahv2Hig.css">
+  <script type="module" crossorigin src="/js-practice-l11/fetch-api.js"></script>
+  <link rel="modulepreload" crossorigin href="/js-practice-l11/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/js-practice-l11/assets/fetch-api-DXTbTjB6.css">
 </head>
 
 <body>
   <div class="container">
     <a href="./index.html">Back</a>
+    <form action="submit" class="js-search-form search-form">
+      <div class="form-group">
+        <label for="city" class="label">Введіть назву міста:</label>
+        <input type="text" name="city" class="search-input" aria-label="l" autocomplete="off" required />
+      </div>
+      <div class="form-group">
+        <label for="days" class="label">Виберіть кількість днів:</label>
+        <div class="input-group">
+          <select id="days" name="days" class="days-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <button type="submit" class="search-button">Пошук</button>
+        </div>
+      </div>
+    </form>
+    <ul class="js-list weather-cards"></ul>
   </div>
 
 </body>
