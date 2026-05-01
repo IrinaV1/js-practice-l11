@@ -72,6 +72,7 @@ ul {
 .search-form {
   display: flex;
   flex-direction: column;
+
   gap: 10px;
 }
 
@@ -80,6 +81,7 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 100%;
 }
 
 /* Поле вводу */
@@ -88,7 +90,10 @@ ul {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  width: 100%;
 }
+
+
 
 /* Кнопка */
 .btn {
@@ -100,6 +105,7 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s;
+  width: 100%;
 }
 
 .btn:hover {
