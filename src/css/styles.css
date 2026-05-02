@@ -7,4 +7,5 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./game-10.css');
 @import url('./axios-api.css');
