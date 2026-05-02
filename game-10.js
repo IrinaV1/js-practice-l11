@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";const c=document.querySelector(".start-btn"),n=document.querySelector(".container-item");document.querySelector(".result");c.addEventListener("click",a);function a(){const o=[...n.children].map(r=>new Promise((t,e)=>{Math.random()>.5?t("🤑"):e("👿")}));Promise.allSettled(o).then(r=>{r.forEach((t,e)=>{n.children[e].textContent="",setTimeout(()=>{n.children[e].textContent=t.value||t.reason},1e3*(e+1))})})}
+//# sourceMappingURL=game-10.js.map
